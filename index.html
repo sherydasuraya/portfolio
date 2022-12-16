@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---<link rel="stylesheet" href="Styling.css">--->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="Instagram" href="https://www.instagram.com/shryd.s/"> -->
+    <title>My Portfolio</title>
+</head>
+<style>
+    .mySlides {display:none;}
+    </style>
+<body style="background-color:floralwhite;">
+  <header>
+    <div class="w3-container" style="background-color: floralwhite">
+      <h2  style="text-align:center;" class="w3-cursive"> <b>SHERYDA SURAYA DARWINA BINTI SAIFUL BAHARIN</b></h2>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+    <div class="w3-bar w3-border w3-padding-small" style="background-color:cornsilk">
+        <a href="#Home" class="w3-bar-item w3-large w3-button w3-hover-none w3-text-black w3-hover-text-grey "style="width:16.66%"><b>Homepage</b></a>
+        <a href="#Intro" class="w3-bar-item w3-large w3-button w3-hover-none w3-text-black w3-hover-text-grey"style="width:16.66%"><b>About Me</b></a>
+        <a href="#Task" class="w3-bar-item w3-large w3-button w3-hover-none w3-text-black w3-hover-text-grey"style="width:16.66%"><b>Projects</b></a>
+        <a href="#Ability" class="w3-bar-item w3-large w3-button w3-hover-none w3-text-black w3-hover-text-grey"style="width:16.66%"><b>Skills</b></a>
+        <a href="#Awards" class="w3-bar-item w3-large w3-button w3-hover-none w3-text-black w3-hover-text-grey"style="width:16.66%"><b>Achievements</b></a>
+        <a href="#Info" class="w3-bar-item w3-large w3-button w3-hover-none w3-text-black w3-hover-text-grey"style="width:16.66%"><b>Contacts</b></a>
+    </div>
+
+      <!-- Top Pic Background -->
+     <div2>   
+        <div id="Home" class="w3-display-container">
+            <img src="FCH2.jpg" alt="FCHku"class="w3-opacity"style="width:100%">
+            <div class="w3-display-middle w3-container w3-monospace"> 
+                <h4 style="background-color:ghostwhite; text-align:center;">“Never be bullied into silence. Never allow yourself to be made a victim. Accept no one’s definition of your life; define yourself.” <b> —Harvey Fierstein</b><br>
+                    </h4>
+            </div>
+        </div>
+    
+    </div2>
+
+    <!-- About me info -->
+    <div3>
+        <h2 id="Intro" class="w3-panel; w3-cursive " style="text-align:center; background-color:wheat;"> <b>About Me</b></h2>
+        <div class="w3-row">
+        <div class="w3-container w3-col s6 w3-mobile">
+        <h4 class="w3-card" style="background-color:white; width:100%">A third-year student at University Malaysia Pahang who graduated from aircraft maintenance and now moving into the automation industry.<br>
+          A daring individual who enjoys travelling and fishing. A person who <b>enjoys trying new things</b> like archery, kayaking, camping, and many others while still being able to <b>concentrate on her academics,</b> keep up her grades, and be an active participant in a number of clubs.<br>
+          I consider myself to be <b>an adventurer</b> because I am interested in many different aspects of the world. I enjoy learning about <b>other cultures, languages, and skills</b> from other individuals. <br>
+          I want to learn outside the classroom, thus I also appreciate volunteering for charities or projects. <b> I certainly think that if we show kindness to others, we will also experience kindness in return.</b><br></h4>
+        </div>
+        <!-- Slideshow -->
+        <div class="w3-content w3-display-container w3-cell w3-mobile ">
+            <img class="mySlides" src="Beach.jpg" alt="Beachday" style="width:500px;height:600px;">
+            <img class="mySlides" src="Chucky.jpg" alt="Chucky" style="width:500px;height:600px;">
+            <img class="mySlides" src="lobster1.jpg" alt="Lob" style="width:500px;height:600px;">
+            <img class="mySlides" src="Waterfall.jpg" alt="Waterfall" style="width:500px;height:600px;">
+            <img class="mySlides" src="cirsus1.jpg" alt="Circus" style="width:500px;height:600px;">
+            <img class="mySlides" src="elephant.jpg" alt="Ele" style="width:500px;height:600px;">
+            <img class="mySlides" src="fishy.jpg" alt="Fish" style="width:500px;height:600px;">
+            <img class="mySlides" src="turbine.jpg" alt="Engine" style="width:500px;height:600px;">
+             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div> 
+    </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    </div3>
+
+    <!-- Project -->
+    <div4>
+        <h2 id="Task" class="w3-panel; w3-cursive" style="text-align:center; background-color:wheat;"> <b>Projects</b></h2>
+        <div class="w3-row-padding w3-padding-16 w3-center ">
+          <div class="w3-quarter ">
+            <img src="catbot.jpg" alt="Robot" style="width:200px;height:200px;">
+            <h4><b>Smart Robot</b></h4>
+            <p><b>Features</b></p>
+              <ul>
+                <li>Color Detection</li>
+                <li>Remotely Controlled</li>
+                <li>Line Follower</li>
+                <li>Temperature & Humidity Detection</li>
+                <li>Obstacle Detector</li></ul>
+          </div>
+          <div class="w3-quarter">
+            <img src="Sorting station.jpeg" alt="Sort" style="width:200px;height:200px;">
+            <h4><b>PLC Sorting Station</b></h4>
+            <p><b>Features</b></p>
+            <ul>
+              <li>Optical Sensor</li>
+              <li>Inductive Sensor</li>
+              <li>Retro-reflective Sensor</li>
+              <li>Pneumatic Cylinder</li></ul>
+          </div>
+          <div class="w3-quarter">
+            <img src="hotel.png" alt="5star" style="width:200px;height:200px;">
+            <h4><b>Cisco Hotel Network</b></h4>
+              <p><b>Features</b></p>
+              <ul>
+                <li>Router</li>
+                <li>Switch</li>
+                <li>Server</li>
+                <li>Firewall</li></ul>
+          </div>
+          <div class="w3-quarter">
+            <img src="Smart locker1.png" alt="Locker" style="width:200px;height:200px;">
+            <h4><b>Smart Locker</b></h4>
+              <p><b>Features</b></p>
+              <ul>
+                <li>16 Compartments</li>
+                <li>Portable</li>
+                <li>Auto Lock Mechanism</li>
+                <li>Slim and Tall</li></ul>
+          </div>
+        </div>
+
+    </div4>
+
+    <!-- Skill panels -->
+    <div5>
+        <h2 id="Ability"class="w3-panel; w3-cursive" style="text-align:center; background-color:wheat;"><b>Basic Skills</b></h2>
+        <div10 class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+
+         <div class="w3-third w3-margin-bottom" style="background-color:lightcyan; width:50%">
+             <h3><b>Raspberry Pi</b></h3>
+             <img src="conveyor.png" alt="Con" style="width:200px;height:200px;">
+             <img src="RPI project.jpeg" alt="Rpi" style="width:200px;height:200px;"><br>
+             <p><b>Knowledge in:</b></p>
+             <ul>
+              <li>Installation Software</li>
+              <li>Update & Upgrade Software</li>
+              <li>Remotely Acces with VNC Viewer & Putty SSH</li>
+              <li>Keypad Coding</li>
+              <li>PIR</li>
+            </ul>
+         </div>
+
+         <div class="w3-third w3-margin-bottom" style="background-color:papayawhip; width:50%">
+          <h3><b>AutoCAD</b></h3>
+          <img src="Autocad1.png" alt="satu" style="width:200px;height:200px;">
+          <img src="Autocad2.png" alt="dua" style="width:200px;height:200px;"><br>
+          <p><b>Knowledge in:</b></p>
+          <ul>
+           <li>Array</li> 
+           <li>Fillet</li>
+           <li>Dimension</li>
+           <li>Hatch</li>
+           <li>Isometric Design</li>
+           </ul>
+         </div>
+
+         <div class="w3-third w3-margin-bottom" style="background-color:mistyrose; width:50%">
+          <h3><b>Network</b></h3>
+          <img src="hotel.png" alt="5level" style="width:200px;height:200px;">
+          <img src="cisco.jpg" alt="hybrid" style="width:200px;height:200px;"><br>
+          <p><b>Knowledge in:</b></p>
+          <ul>
+           <li>Create multiple topology</li>
+           <li>Assign & Pin IP Address</li>
+           <li>Configure Router & Switch</li>
+          </ul>
+        </div>
+
+         <div class="w3-third w3-margin-bottom" style="background-color:lavender; width:50%">
+             <h3><b>PLC</b></h3>
+             <img src="apple.png" alt="applefac" style="width:200px;height:200px;">
+             <img src="carpark.png" alt="parking" style="width:200px;height:200px;"><br>
+             <p><b>Knowledge in:</b></p>
+             <ul>
+              <li>Ladder Diagram</li> 
+              <li>Structured Text</li>
+              <li>Function Block Diagram</li>
+            </ul>
+           </div>
+
+           <div class="w3-third w3-margin-bottom" style="background-color:thistle; width:50%">
+            <h3><b>Programming</b></h3>
+            <img src="tkinter2.png" alt="two" style="width:200px;height:200px;">
+            <img src="coding_1.png" alt="one" style="width:200px;height:200px;"><br>
+            <p><b>Knowledge in:</b></p>
+            <ul>
+             <li>C language</li>
+             <li>Python</li>
+             <li>Arduino</li>
+             <li>MIT App Inventor</li>
+             <li>Thunkable</li>
+             </ul>
+          </div>
+
+           <div class="w3-third w3-margin-bottom" style="background-color:palegoldenrod; width:50%">
+             <h3><b>Database</b></h3>
+             <img src="Firebase.png" alt="fire" style="width:200px;height:200px;">
+             <img src="database.png" alt="data" style="width:200px;height:200px;"><br>
+             <p><b>Knowledge in:</b></p>
+             <ul>
+              <li>Firebase</li> 
+              <li>SQL</li>
+              <li>Intergrate with Python & HTML</li>
+              <li>Insert Data</li>
+              <li>Display Data</li>
+              </ul>
+           </div>
+        </div10>
+    </div5>
+    
+    <!-- Achivements -->
+    <div6>
+      <h2 id="Awards" class="w3-panel; w3-cursive" style="text-align:center; background-color:wheat;"> <b>Achievements</b></h2>
+      <div10 class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+
+      <div class="w3-third w3-margin-bottom">
+        <img src="Dean.jpg" alt="Dean's List" style="width:100%">
+          <div class="w3-container w3-white">
+            <h5><b>Dean's List</b></h5>
+            <h6 class="w3-opacity">From 2020-2022</h6>
+            <p>Dean List every semester for Bachelor in Electronic Industrial Automation (University Malaysia Pahang).</p>
+          </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <img src="SukFac.jpg" alt="pingpong" style="width:100%">
+        <div class="w3-container w3-white">
+          <h5><b>SukFac</b></h5>
+          <h6 class="w3-opacity">04 December 2022</h6>
+          <p>Won 2nd place in team table tennis for Faculty of Electrical and Electronic Technology Engineering. </p>
+        </div>
+      </div>
+    
+      <div class="w3-third w3-margin-bottom">
+        <img src="palam.jpg" alt="wslec" style="width:94%">
+        <div class="w3-container w3-white">
+          <h5><b>Women Student Leadership Empowerment Convention</b></h5>
+          <h6 class="w3-opacity">13-14 September 2022</h6>
+          <p>University representative as participant for this 2-day convention at UITM Puncak Alam, Selangor.</p>
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+       <img src="pbd.jpg" alt="paya besar" style="width:100%">
+        <div class="w3-container w3-white">
+         <h5><b>Paya Besar Dialogue</b></h5>
+         <h6 class="w3-opacity">17 July 2022</h6>
+         <p>University representative as volunteer for this 1-day forum at Sungai Lembing, Pahang.</p>
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+       <img src="GYS.jpg" alt="kl" style="width:100%">
+       <div class="w3-container w3-white">
+         <h5><b>KL Global Youth Summit</b></h5>
+         <h6 class="w3-opacity">20 June 2022</h6>
+         <p>University representative as participant for this 1-day forum at KL Convention Center.</p>
+       </div>
+      </div>
+      
+        <div class="w3-third w3-margin-bottom">
+          <img src="PD1.jpg" alt="Director" style="width:100%">
+          <div class="w3-container w3-white">
+            <h5><b>Red Ribbon Virtual Run</b></h5>
+            <h6 class="w3-opacity">22-28 December 2021</h6>
+            <p>Program Director. </p>
+      </div>
+        </div>
+      </div10>
+    </div6>
+
+    <!-- contact info -->
+    <div7>
+        <h2 id="Info" class="w3-panel; w3-cursive" style="text-align:center; background-color:wheat;"><b>Contact</b></h2>
+        <p> Let's get in touch. Send me a message:</p>
+
+        <form action="/action_page.php" class="w3-container w3-card-4 w3-text-black w3-margin" style="background-color:antiquewhite;">
+           
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+          <p>
+          </p>
+          
+          <button class="w3-button w3-block w3-section w3-ripple w3-padding" style="background-color:lightsalmon;">Send Message</button>
+          
+          </form>
+    </div7>
+
+    <footer>
+      <div class="w3-container" style="background-color:  floralwhite;">
+        <div class="w3-bar w3-row ">
+          <div class=" w3-third w3-center">
+        <form method="get" action="https://www.instagram.com/shryd.s/">
+          <button class= "w3-bar-item w3-center w3-hover-opacity" type="submit" style="background-color:  floralwhite"><img src="IG.png" style="width:32px;height:32px;"></form>
+        <form method="get" action="https://www.linkedin.com/in/sheryda-suraya-darwina-80292b256/">
+          <button class= "w3-bar-item w3-center w3-hover-opacity" type="submit" style="background-color:  floralwhite"><img src="Linkedin.png" style="width:30px;height:30px;"></form>
+        <form method="get" action="https://www.facebook.com/sherydasuraya/">
+          <button class= "w3-bar-item w3-center w3-hover-opacity" type="submit" style="background-color:  floralwhite"><img src="fb.png" style="width:30px;height:30px;"></form>
+      </div>
+        <p class=" w3-third w3-center">Created by: <br><b>Sheryda_VC20023</b></p>
+        <p class="w3-third w3-center">Date by:<br> <b> 05 December 2022 </b></p>
+      </div>
+      </div>
+    </footer>
+
+</body>
+</html>
